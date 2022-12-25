@@ -1,0 +1,72 @@
+.catalogs{
+    text-align: center;
+    padding: 120px 0;
+    min-height: 1370px;
+}
+
+.catalogs__nav{
+    background-color: #301612;
+    width: 100%;
+    height: 70px;
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.catalogs__wrapper{
+    width: 100%;
+    height: 100%;
+
+}
+
+.catalogs__link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height */
+    margin-right: 15px;
+
+    color: #FFFFFF;
+
+    &:hover{
+        color: #FFFFFF ;
+        text-decoration: none;
+    }
+}
+
+
+.catalogs__cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.card__item{
+    width: 413px;
+    img{
+        width: 413px;
+        height: 350px
+    }
+    
+}
+
+
+
+.animate__cards{
+    transition: 1s ease-in-out;
+    animation-name: animateCard;
+}
+
+@keyframes animateCard {
+    0%{
+       opacity: 0; 
+       
+    } 
+    100%{
+       
+        opacity: 1;
+    }
+}

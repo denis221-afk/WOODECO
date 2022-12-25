@@ -1,0 +1,141 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+
+.btn{
+    background: #301612;
+    padding: 8px 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    &:hover{
+        text-decoration: none;
+        transition: 0.5s ease-in-out;
+        color: #301612;
+        background: #3016124f;
+    }
+}
+
+
+.btn-light{
+    padding: 7px 36px;
+    border: 1px solid #301612;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #301612;
+
+    &:hover{
+        text-decoration: none;
+        transition: 0.5s ease-in-out;
+        color: #301612;
+        background: #3016124f;
+    }
+}
+
+
+
+.section__title{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #000000;
+    &::after{
+        content: "";
+        display: block;
+        width: 90%;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #301612;
+        margin-top: 10px;
+    }
+}
+
+.subtitle{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.masenge__validation{
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px #000;
+    transition: 1s;
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.masenge__active{
+    transition: 1s;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@import "./blocks/header";
+@import "./blocks/Intro";
+@import "./blocks/services";
+@import "./blocks/benefist";
+@import "./blocks/catalogs";
+@import "./blocks/contact";
+@import "./blocks/media";

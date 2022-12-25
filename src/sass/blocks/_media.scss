@@ -1,0 +1,199 @@
+@media (max-width: 1440px) {
+
+ .contact__wrapper{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: space-around;
+ }   
+ .contact__img{
+    max-width: 545px;
+    width: 100%;
+ }
+ .card__item{
+    width: 380px;
+    img{
+        width: 100%;
+    }
+ }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .nav__flex{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+    }
+
+    .services__wrap{
+        display: grid;
+        grid-template: repeat(4,350px)/ repeat(2,315px);
+        grid-auto-rows: 413px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .first{
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .last{
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .horizontale{
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .horizontale .item__info{
+        height: 100px;
+    }
+
+    .services{
+        padding: 60px 0;
+    }
+
+    .catalogs__cards{
+        grid-template-columns: auto auto;
+        justify-content: center;
+     }
+
+    .card__item{
+        width: 315px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .Intro__info{
+        width: 70%;
+    }
+    .benefist{
+        padding: 60px 0;
+    }
+    .top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .Intro__info{
+        width: 100%;
+    }
+    .bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+         .card{
+            max-width: 302px;
+        }
+    }
+    
+    .catalogs__cards{
+        grid-template-columns: auto;
+        justify-content: center;
+     }
+
+     .contact__img{
+        display: none;
+     }
+     .contact__info{
+        max-width: 300px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        label{
+            display: block;
+        }
+
+        input{
+            width: 100%;
+            display: block;
+        }
+    }
+    .footer-form{
+        grid-template-columns: 210px;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        max-width: none;
+    }
+
+    .title{
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  
+    .panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-20px);
+    }
+
+    .btn-light{
+        margin-top: 20px;
+    }
+
+    .services__wrap{
+        display: grid;
+        grid-template: repeat(6,350px)/ repeat(1,280px);
+        grid-auto-rows: 413px;
+        justify-content: center;
+    }
+
+    .card__item{
+        width: 300px;
+    }
+
+    .catalogs__link{
+        font-size: 12px;
+    line-height: 15px;
+    margin-right: 14px;
+    }
+
+    .contact__info{
+        max-width: 300px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        label{
+            display: block;
+        }
+
+        input{
+            width: 100%;
+            display: block;
+        }
+    }
+    .footer-form{
+        grid-template-columns: 210px;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+}

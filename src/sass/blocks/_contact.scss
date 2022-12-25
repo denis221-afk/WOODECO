@@ -1,0 +1,118 @@
+.contact__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.15em;
+    color: #000000;
+}
+
+
+.contact{
+    span{  
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+        letter-spacing: 0.15em;
+
+        color: #000000;
+    }
+}
+.contact__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+form{
+    margin-top: 40px;
+    label{
+        position: relative;
+    }
+    display: grid;
+    grid-template: 45px 190px 45px/repeat(2,280px);
+    justify-content: space-between;
+    row-gap: 27px;
+    position: relative;
+
+    input{
+        width: 90%;
+        padding: 4px 20px;
+    }
+    textarea{
+        position: relative;
+        grid-column: 1/3;
+        width: 95%;
+        height: 100%;
+        resize: none;
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}   
+
+.input-name{
+    padding: 0 4px;
+    background-color: #fff;   
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height */
+
+    letter-spacing: 0.15em;
+
+    color: #000000;
+    position: absolute;
+    top: -3px;
+    left: 7px;
+}
+
+.footer-form{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 210px auto;
+    grid-template-rows: 40px;
+    position: relative;
+    column-gap: 10px;
+    input{
+        width: 16px;
+    }
+}
+
+.political{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+    span{
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+}
+
+.soc__modall{
+    img{
+        max-width: 20px;
+    }
+}
+
+.btn-form{
+    font-size: 12px;
+}
+
+.soc__modall{
+    a{
+        margin-left: 5px;
+    }
+}
